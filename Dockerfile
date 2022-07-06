@@ -4,10 +4,10 @@
 #  to minimize the attack surface of vulnerable packages
 #
 
-FROM    centos:7 as builder
+FROM    centos:7 #as builder
 
 # destination folder of the new os
-ARG     centos_root=/centos_image/rootfs
+ARG     centos_root=/c79image/rootfs
 
 # make sure everything is the latest
 RUN     set -eux; yum -y update
